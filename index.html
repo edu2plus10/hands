@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Finger DIV Generative (MediaPipe)</title>
+
+  <!-- CSSは外部ファイル -->
+  <link rel="stylesheet" href="hands.css">
+</head>
+<body>
+
+  <div id="wrap">
+    <video id="cam" autoplay playsinline></video>
+    <div id="canvas"></div>
+  </div>
+
+  <div id="ui">
+    <button id="start">カメラ開始</button>
+    <div id="msg">未起動</div>
+  </div>
+
+  <!-- MediaPipe + ロジック -->
+  <script type="module" src="hands.js"></script>
+</body>
+</html>
